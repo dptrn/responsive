@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+    padding: 10px 0;
+}
+.nav_left h5{
+    margin: 0;
+    font-size: 30px;
+    color: blue;
+    font-weight: 900;
+}
+.nav_right ul {
+    display: flex;
+    
+
+}
+.nav_right ul li {
+    padding: 0 10px;
+    list-style: none;
+   
+}
+.nav_right ul li  a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 80%;
+}
+.header_left h5{
+    margin: 0;
+    font-size: 50px;
+    color: blue;
+}
+.header_left_btn{
+    margin-top: 30px;
+   
+}
+.header_left_btn button{
+    padding: 15px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.get_btn{
+    border: none;
+    color: white;
+    background-color: black;
+    transition: 0.5s ease-in-out;
+}
+.get_btn:hover{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+
+}
+.contact_btn{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+}
+.contact_btn:hover{
+    border: none;
+    color: white;
+    background-color: black;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr) );
+    gap: 20px;
+    width: 80%;
+    justify-items: center;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.card{
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    border-radius: 30px;
+    padding: 0 20px;
+    text-align: center;
+    transition: 0.5s all ease-in-out;
+}
+.card_details{
+    position:relative;
+    bottom: 30px;
+    text-transform: capitalize;
+}
+.card_details h5{
+    font-size: 25px;
+    margin: 10px 0 ;
+}
+.card_details p {
+     font-size: 20px;
+     color: brown;
+     font-weight: 800;
+     margin-bottom: 10px;
+}
+.card_details button{
+    border: none;
+    color: white;
+    background-color:blue;
+    padding: 15px 100px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.card:hover button{
+    box-shadow: rgba(84, 22, 255, 0.4) 0px 5px, rgba(62, 46, 240, 0.3) 0px 10px, rgba(85, 46, 240, 0.2) 0px 15px, rgba(62, 46, 240, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+    
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    transform: scale(1.01);
+}
+.card img{
+    max-width: 300px;
+
+}
+
+@media screen and (max-width:1025px){
+    .header_img img{
+        max-width: 300px;
+    }
+    .header_left h5{
+        font-size: 30px;
+    }
+    .header_left_btn button{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:426px){
+    .header{
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+}
